@@ -94,6 +94,19 @@ func main() {
 }
 
 func bubble(ops *vsort.Ops) {
+
+    // The following functions can be used for your sorting algorithms
+    // func (o *Ops) Swap(i, j int)
+    // func (o *Ops) Diff(i, j int) int
+    // func (o *Ops) Len() int
+    // func (o *Ops) Equal(i, j int) bool
+    // func (o *Ops) NotEqual(i, j int) bool
+    // func (o *Ops) LessThen(i, j int) bool
+    // func (o *Ops) GreaterThen(i, j int) bool
+    // func (o *Ops) LessEqualThen(i, j int) bool
+    // func (o *Ops) GreaterEqualThen(i, j int) bool
+    // func (o *Ops) Get(i int) int
+
     for i := 0; i < ops.Len(); i++ {
         for j := 1; j < ops.Len()-i; j++ {
             if ops.GreaterThen(j-1, j) {
