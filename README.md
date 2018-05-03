@@ -87,7 +87,7 @@ import (
 
 func main() {
     r := vsort.Init()
-    r.TickTime = time.Millisecond * 1
+    r.TickTime = time.Millisecond * 10
 
     r.Run(bubble) // and your function for the algorithm you want to test.
                   // You can add multiple algorithms here to compare them
